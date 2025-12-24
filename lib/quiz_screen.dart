@@ -40,7 +40,7 @@ class _QuizScreenState extends State<QuizScreen> {
             ),
             SizedBox(height: 40),
 
-            ...questions[currentIndex].shuffleTheAnswer().map((ans) {
+            ...questions[currentIndex].shuffleTheAnswer.map((ans) {
               return CustomAnswerButton(
                 ontap: () {
                   switchQuestion(ans);
